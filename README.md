@@ -6,6 +6,18 @@
 
 A simple web application that displays random heisi images using an external API.
 
+## 🎮 Demo
+
+Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
+
+## 🎮 Game Screenshots
+
+<div align="center">
+  <img src="./public/assets/game-screenshot-1.png" alt="Game Screenshot 1" width="300"/>
+  <img src="./public/assets/game-screenshot-2.png" alt="Game Screenshot 2" width="300"/>
+  <img src="./public/assets/game-screenshot-3.png" alt="Game Screenshot 3" width="300"/>
+</div>
+
 ## Project Inspiration
 
 This project was inspired by a random heisi image API that provides high-quality images through a simple GET request.
@@ -22,12 +34,27 @@ This project was inspired by a random heisi image API that provides high-quality
 - Simple and clean interface
 - Random heisi image display
 - Easy to use API integration
+- Responsive design
+- Smooth image loading
+- Modern UI/UX
 
 ## Getting Started
 
-1. Clone the repository
-2. Install dependencies
-3. Run the application
+1. Clone the repository:
+```bash
+git clone https://github.com/EazyLee30/heisi-game.git
+cd heisi-game
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the application:
+```bash
+npm start
+```
 
 ## Usage
 
@@ -35,4 +62,12 @@ Simply make a GET request to the API endpoint to receive a random heisi image in
 
 ## License
 
-MIT License 
+MIT License
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Contact
+
+For any questions or suggestions, please open an issue in the GitHub repository. 

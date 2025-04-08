@@ -193,7 +193,7 @@ function SwipeView({ favorites = [], addToFavorites }) {
       </AnimatePresence>
 
       <Instructions>
-        左滑不喜欢，右滑喜欢，或点击下方按钮
+        左滑喜欢，右滑不喜欢，或点击下方按钮
       </Instructions>
 
       <LikeDislikeButtons>

@@ -8,9 +8,13 @@ A simple web application that displays random heisi images using an external API
 
 ## 🎮 Demo
 
-Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
+Try the game online: [https://heisi-game.vercel.app](https://heisi-game.vercel.app)
 
-## 🎮 Game Screenshots
+<div align="center">
+  <img src="./public/assets/demo.gif" alt="Game Demo" width="600"/>
+</div>
+
+## �� Game Screenshots
 
 <div align="center">
   <img src="./public/assets/game-screenshot-1.png" alt="Game Screenshot 1" width="300"/>

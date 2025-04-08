@@ -8,7 +8,11 @@
 
 ## 🎮 演示
 
-在线试玩：[https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
+在线试玩： [https://heisi-game.vercel.app](https://heisi-game.vercel.app)
+
+<div align="center">
+  <img src="./public/assets/demo.gif" alt="游戏演示" width="600"/>
+</div>
 
 ## 🎮 游戏截图
 

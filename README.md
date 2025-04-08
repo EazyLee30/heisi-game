@@ -2,6 +2,14 @@
 
 A modern web-based game built with React and Framer Motion.
 
+## 🎮 Game Screenshots
+
+<div align="center">
+  <img src="public/assets/game-screenshot-1.png" alt="Game Screenshot 1" width="300"/>
+  <img src="public/assets/game-screenshot-2.png" alt="Game Screenshot 2" width="300"/>
+  <img src="public/assets/game-screenshot-3.png" alt="Game Screenshot 3" width="300"/>
+</div>
+
 ## 🚀 Features
 
 - Built with React 18

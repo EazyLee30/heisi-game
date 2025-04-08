@@ -11,7 +11,7 @@ A simple web application that displays random heisi images using an external API
 Try the game online: [https://heisi-game.vercel.app](https://heisi-game.vercel.app)
 
 <div align="center">
-  <img src="./public/assets/demo.gif" alt="Game Demo" width="600"/>
+  <img src="./public/assets/demo.gif" alt="Game Demo" width="400"/>
 </div>
 
 ## 🎮 Game Screenshots

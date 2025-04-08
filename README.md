@@ -18,18 +18,18 @@ Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app]
   <img src="./public/assets/game-screenshot-3.png" alt="Game Screenshot 3" width="300"/>
 </div>
 
-## Project Inspiration
+## 💡 Project Inspiration
 
 This project was inspired by a random heisi image API that provides high-quality images through a simple GET request.
 
-## API Information
+## 🔌 API Information
 
 - API Endpoint: https://v2.api-m.com/api/heisi
 - Response Format: JSON/IMG
 - Request Method: GET
 - Optional Parameter: `return=302` (for direct image URL)
 
-## Features
+## ✨ Features
 
 - Simple and clean interface
 - Random heisi image display
@@ -38,7 +38,7 @@ This project was inspired by a random heisi image API that provides high-quality
 - Smooth image loading
 - Modern UI/UX
 
-## Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository:
 ```bash
@@ -56,18 +56,18 @@ npm install
 npm start
 ```
 
-## Usage
+## 📝 Usage
 
 Simply make a GET request to the API endpoint to receive a random heisi image in JSON format.
 
-## License
+## 📄 License
 
 MIT License
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Contact
+## 📞 Contact
 
 For any questions or suggestions, please open an issue in the GitHub repository. 

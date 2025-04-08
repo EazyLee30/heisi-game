@@ -1,89 +1,34 @@
 # Heisi Game
 
-A modern web-based game built with React and Framer Motion.
+A simple web application that displays random heisi images using an external API.
 
-## 🎮 Demo
+## Project Inspiration
 
-Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
+This project was inspired by a random heisi image API that provides high-quality images through a simple GET request.
 
-## 🎮 Game Screenshots
+## API Information
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/EazyLee30/heisi-game/main/public/assets/game-screenshot-1.png" alt="Game Screenshot 1" width="300"/>
-  <img src="https://raw.githubusercontent.com/EazyLee30/heisi-game/main/public/assets/game-screenshot-2.png" alt="Game Screenshot 2" width="300"/>
-  <img src="https://raw.githubusercontent.com/EazyLee30/heisi-game/main/public/assets/game-screenshot-3.png" alt="Game Screenshot 3" width="300"/>
-</div>
+- API Endpoint: https://v2.api-m.com/api/heisi
+- Response Format: JSON/IMG
+- Request Method: GET
+- Optional Parameter: `return=302` (for direct image URL)
 
-## 🚀 Features
+## Features
 
-- Built with React 18
-- Smooth animations using Framer Motion
-- Responsive design
-- React Router for navigation
-- Styled Components for styling
+- Simple and clean interface
+- Random heisi image display
+- Easy to use API integration
 
-## 📦 Installation
+## Getting Started
 
-1. Clone the repository:
-```bash
-git clone https://github.com/EazyLee30/heisi-game.git
-cd heisi-game
-```
+1. Clone the repository
+2. Install dependencies
+3. Run the application
 
-2. Install dependencies:
-```bash
-npm install
-```
+## Usage
 
-3. Start the development server:
-```bash
-npm start
-```
+Simply make a GET request to the API endpoint to receive a random heisi image in JSON format.
 
-The application will be available at `http://localhost:7788`
+## License
 
-## 🛠️ Available Scripts
-
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App
-
-## 🏗️ Project Structure
-
-```
-heisi-game/
-├── public/          # Static files
-├── src/             # Source code
-├── build/           # Production build
-├── nginx.conf       # Nginx configuration
-└── deploy.sh        # Deployment script
-```
-
-## 🔧 Dependencies
-
-- React 18.2.0
-- React Router DOM 6.18.0
-- Framer Motion 10.16.4
-- Styled Components 6.0.7
-- React Swipeable 7.0.1
-
-## 🚀 Deployment
-
-The project includes a deployment script (`deploy.sh`) for easy deployment to a server. To deploy:
-
-```bash
-./deploy.sh
-```
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Contact
-
-For any questions or suggestions, please open an issue in the GitHub repository. 
+MIT License 

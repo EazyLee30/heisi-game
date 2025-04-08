@@ -8,7 +8,7 @@
 
 ## 🎮 演示
 
-在线试玩：[heisi-game.vercel.app](heisi-game.vercel.app)
+在线试玩： [https://heisi-game.vercel.app](https://heisi-game.vercel.app)
 
 ## 🎮 游戏截图
 

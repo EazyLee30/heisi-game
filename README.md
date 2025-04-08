@@ -8,7 +8,7 @@ A simple web application that displays random heisi images using an external API
 
 ## 🎮 Demo
 
-Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
+Try the game online: [heisi-game.vercel.app](heisi-game.vercel.app)
 
 ## 🎮 Game Screenshots
 

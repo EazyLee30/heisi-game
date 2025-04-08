@@ -4,9 +4,9 @@ A modern web-based game built with React and Framer Motion.
 
 ## 🎮 Demo
 
-Try the game online: [https://heisi-game.vercel.app](https://heisi-game.vercel.app)
+Try the game online: [https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app](https://heisi-game-9h6y3uo8u-eazylees-projects.vercel.app)
 
-## �� Game Screenshots
+## 🎮 Game Screenshots
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/EazyLee30/heisi-game/main/public/assets/game-screenshot-1.png" alt="Game Screenshot 1" width="300"/>

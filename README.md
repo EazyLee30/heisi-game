@@ -1,5 +1,9 @@
 # Heisi Game
 
+<div align="right">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</div>
+
 A simple web application that displays random heisi images using an external API.
 
 ## Project Inspiration

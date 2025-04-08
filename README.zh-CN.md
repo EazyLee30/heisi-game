@@ -1,5 +1,9 @@
 # 黑丝游戏
 
+<div align="right">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</div>
+
 一个使用外部API显示随机黑丝图片的简单网页应用。
 
 ## 项目灵感

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -61,10 +61,15 @@ const LikeDislikeButtons = styled.div`
   transform: translateX(-50%);
   display: flex;
   gap: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
 `;
 
 const ActionButton = styled.button`
   padding: 1rem 2rem;
+  min-width: 100px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid ${props => props.like ? '#00ff00' : '#ff0000'};
   color: #fff;
@@ -72,6 +77,7 @@ const ActionButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
+  white-space: nowrap;
   
   &:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -97,6 +103,7 @@ function SwipeView({ favorites = [], addToFavorites }) {
   const [photos, setPhotos] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState('right');
+  const directionRef = useRef('right');
   const navigate = useNavigate();
 
   const handlers = useSwipeable({
@@ -146,18 +153,22 @@ function SwipeView({ favorites = [], addToFavorites }) {
     return () => window.removeEventListener('keydown', handleKeyPress);
   }, []);
 
-  const handleSwipe = useCallback((direction) => {
+  const handleSwipe = useCallback((dir) => {
     if (currentIndex < photos.length) {
       const currentPhoto = photos[currentIndex];
-      setDirection(direction);
-      if (direction === 'left' && currentPhoto) {
-        addToFavorites(currentPhoto);
-      }
-      setCurrentIndex(prev => prev + 1);
+      setDirection(dir);
+      directionRef.current = dir;
       
-      if (currentIndex === photos.length - 1) {
-        fetchPhotos();
-      }
+      setTimeout(() => {
+        if (dir === 'left' && currentPhoto) {
+          addToFavorites(currentPhoto);
+        }
+        setCurrentIndex(prev => prev + 1);
+        
+        if (currentIndex === photos.length - 1) {
+          fetchPhotos();
+        }
+      }, 0);
     }
   }, [currentIndex, photos, addToFavorites, fetchPhotos]);
 
@@ -173,7 +184,7 @@ function SwipeView({ favorites = [], addToFavorites }) {
             key={currentIndex}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ x: direction === 'left' ? 300 : -300, opacity: 0 }}
+            exit={{ x: direction === 'right' ? 300 : -300, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
             <Photo src={photos[currentIndex].url} alt="Photo" />
@@ -182,14 +193,14 @@ function SwipeView({ favorites = [], addToFavorites }) {
       </AnimatePresence>
 
       <Instructions>
-        左右滑动或点击下方按钮进行选择
+        左滑不喜欢，右滑喜欢，或点击下方按钮
       </Instructions>
 
       <LikeDislikeButtons>
-        <ActionButton like onClick={() => handleSwipe('right')}>
+        <ActionButton like onClick={() => handleSwipe('left')}>
           喜欢
         </ActionButton>
-        <ActionButton onClick={() => handleSwipe('left')}>
+        <ActionButton onClick={() => handleSwipe('right')}>
           不喜欢
         </ActionButton>
       </LikeDislikeButtons>
